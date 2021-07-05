@@ -1,15 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <link rel="icon" href="data:image" />
+    <link rel="stylesheet" href="./app.css" type="text/css" />
+    <title>Git</title>
   </head>
   <body>
     <main>
+      <h1>Commandes de base de Git et Github</h1>
       <section>
         <article>
-          <h2>Titre 3</h2>
-          <p>blah blagh lbag</p>
+          <table>
+            <thead>
+            <tr>
+              <th>Commande</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>git init : </td>
+              <td>Créér un nouveau repository</td>
+            </tr>
+            <tr>
+              <td>git clone <url> :</td>
+              <td>clone un repo distant situé a <url></td>
+            </tr>
+            <tr>
+              <td>git status :</td>
+              <td>Voir différentes infos concernant les fichiers
+              modifiés.</td>
+            </tr>
+            <tr>
+              <td>git add index.html :</td>
+              <td>Ajoute le fichier index.html à notre
+              historique.</td>
+            </tr>
+            <tr>
+              <td>git add . :</td>
+              <td>Ajoute tous les fichiers à notre historique</td>
+            </tr>
+            <tr>
+              <td>git rm --cached index.html :</td>
+              <td>Efface le fichier index.html de notre
+              historique</td>
+            </tr>
+            <tr>
+              <td>git branch -M main :</td>
+              <td>Renommer la branche principale.</td>
+            </tr>
+            <tr>
+              <td>git remote add origin https://github.com/Kenshirosan/learn-git.git :</td>
+              <td>Ajouter l'url github de notre repository</td>
+            </tr>
+            <tr>
+              <td>git push -u origin main :</td>
+              <td>Premier push sur une branche distante (qui est ailleurs qu'en local)</td>
+            </tr>
+            <tr>
+              <td>git push :</td>
+              <td>Commande pour envoyer le code sur github : commande disponible après la commande précédente.</td>
+            </tr>
+            <tr>
+              <td>git commit -m 'Add README' :</td>
+              <td>Effectuer un commit avec un message (Message obligatoire)</td>
+            </tr>
+            <tr>
+              <td>git log :</td>
+              <td>Afficher l'historique des commits</td>
+            </tr>
+            <tr>
+              <td>git --help : </td>
+              <td>Afficher toutes les commandes git</td>
+            </tr>
+            <tr>
+              <td>git checkout -b test :</td>
+              <td>Créer une branche de travail et basculer dessus : raccourci pour git branch nomBranche suivi de git checkout nomBranche</td>
+            </tr>
+            <tr>
+              <td>git push --set-upstream origin test :</td>
+              <td>Envoie la branche test sur github.</td>
+            </tr>
+            <tr>
+              <td>git branch -a :</td>
+              <td>Liste toutes les branches et indique celle sur laquelle on se trouve.</td>
+            </tr>
+            <tr>
+              <td>git branch -d test :</td>
+              <td>Efface la branche test</td>
+            </tr>
+            <tr>
+              <td>git push origin --delete test :</td>
+              <td>Efface la branche distante test</td>
+            </tr>
+            <tr>
+              <td>git pull :</td>
+              <td>Récupérer des modifications faites par d'autres.</td>
+            </tr>
+            </tbody>
+          </table>
         </article>
       </section>
     </main>
